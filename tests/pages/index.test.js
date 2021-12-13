@@ -26,5 +26,7 @@ describe('Test in Home page', () => {
     expect(
       screen.getByText('The Rick And Morty Characters')
     ).toBeInTheDocument();
+
+    expect(screen.getByText('The Rick And Morty Characters')).toMatchSnapshot();
   });
 });
