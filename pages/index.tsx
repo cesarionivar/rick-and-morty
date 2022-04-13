@@ -1,7 +1,12 @@
 import Head from 'next/head';
 import { Character } from '../components/Character';
+import type { IRickAndMortyApiResponse } from '../types';
 
-export default function Home({ characters }) {
+interface Props {
+  characters: IRickAndMortyApiResponse;
+}
+
+export default function Home({ characters }: Props) {
   return (
     <div>
       <Head>
@@ -27,9 +32,9 @@ export default function Home({ characters }) {
 }
 
 export const getStaticProps = async () => {
-  const data = await fetch('https://rickandmortyapi.com/api/character').then(
-    (res) => res.json()
-  );
+  const data: IRickAndMortyApiResponse = await fetch(
+    'https://rickandmortyapi.com/api/character'
+  ).then((res) => res.json());
 
   const { info, results } = data;
 
