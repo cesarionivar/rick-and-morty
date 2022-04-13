@@ -1,3 +1,10 @@
+import { IRickAndMortyResult } from '../types';
+
+type Props = Pick<
+  IRickAndMortyResult,
+  'name' | 'status' | 'species' | 'location' | 'image' | 'gender'
+>;
+
 export const Character = ({
   name,
   status,
@@ -5,7 +12,7 @@ export const Character = ({
   location,
   image,
   gender,
-}) => {
+}: Props) => {
   return (
     <div className='character'>
       <img src={image} alt={name} className='character__img' />
