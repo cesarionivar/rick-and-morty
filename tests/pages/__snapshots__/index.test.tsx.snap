@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in Home page renders the title of the page 1`] = `
+<h1>
+  The Rick And Morty Characters
+</h1>
+`;
