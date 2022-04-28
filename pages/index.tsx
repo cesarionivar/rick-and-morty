@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Character } from '../components/Character';
-import type { IRickAndMortyApiResponse } from '../types';
+import type { IRickAndMortyApiResponse } from '../interfaces/rickandmorty';
 
 interface Props {
   characters: IRickAndMortyApiResponse;

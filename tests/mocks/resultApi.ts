@@ -1,4 +1,11 @@
-export const resultApi = {
+import {
+  Gender,
+  IRickAndMortyApiResponse,
+  Species,
+  Status,
+} from '../../interfaces/rickandmorty';
+
+export const resultApi: IRickAndMortyApiResponse = {
   info: {
     count: 826,
     pages: 42,
@@ -9,10 +16,10 @@ export const resultApi = {
     {
       id: 1,
       name: 'Rick Sanchez',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (C-137)',
         url: 'https://rickandmortyapi.com/api/location/1',
@@ -81,12 +88,12 @@ export const resultApi = {
     {
       id: 2,
       name: 'Morty Smith',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -153,10 +160,10 @@ export const resultApi = {
     {
       id: 3,
       name: 'Summer Smith',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Female',
+      gender: Gender.Female,
       origin: {
         name: 'Earth (Replacement Dimension)',
         url: 'https://rickandmortyapi.com/api/location/20',
@@ -216,10 +223,10 @@ export const resultApi = {
     {
       id: 4,
       name: 'Beth Smith',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Female',
+      gender: Gender.Female,
       origin: {
         name: 'Earth (Replacement Dimension)',
         url: 'https://rickandmortyapi.com/api/location/20',
@@ -279,10 +286,10 @@ export const resultApi = {
     {
       id: 5,
       name: 'Jerry Smith',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (Replacement Dimension)',
         url: 'https://rickandmortyapi.com/api/location/20',
@@ -339,10 +346,10 @@ export const resultApi = {
     {
       id: 6,
       name: 'Abadango Cluster Princess',
-      status: 'Alive',
-      species: 'Alien',
+      status: Status.Alive,
+      species: Species.Alien,
       type: '',
-      gender: 'Female',
+      gender: Gender.Female,
       origin: {
         name: 'Abadango',
         url: 'https://rickandmortyapi.com/api/location/2',
@@ -359,10 +366,10 @@ export const resultApi = {
     {
       id: 7,
       name: 'Abradolf Lincler',
-      status: 'unknown',
-      species: 'Human',
+      status: Status.Unknown,
+      species: Species.Human,
       type: 'Genetic experiment',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (Replacement Dimension)',
         url: 'https://rickandmortyapi.com/api/location/20',
@@ -382,12 +389,12 @@ export const resultApi = {
     {
       id: 8,
       name: 'Adjudicator Rick',
-      status: 'Dead',
-      species: 'Human',
+      status: Status.Dead,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -402,10 +409,10 @@ export const resultApi = {
     {
       id: 9,
       name: 'Agency Director',
-      status: 'Dead',
-      species: 'Human',
+      status: Status.Dead,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (Replacement Dimension)',
         url: 'https://rickandmortyapi.com/api/location/20',
@@ -422,12 +429,12 @@ export const resultApi = {
     {
       id: 10,
       name: 'Alan Rails',
-      status: 'Dead',
-      species: 'Human',
+      status: Status.Dead,
+      species: Species.Human,
       type: 'Superhuman (Ghost trains summoner)',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -442,10 +449,10 @@ export const resultApi = {
     {
       id: 11,
       name: 'Albert Einstein',
-      status: 'Dead',
-      species: 'Human',
+      status: Status.Dead,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (C-137)',
         url: 'https://rickandmortyapi.com/api/location/1',
@@ -462,10 +469,10 @@ export const resultApi = {
     {
       id: 12,
       name: 'Alexander',
-      status: 'Dead',
-      species: 'Human',
+      status: Status.Dead,
+      species: Species.Human,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
         name: 'Earth (C-137)',
         url: 'https://rickandmortyapi.com/api/location/1',
@@ -482,12 +489,12 @@ export const resultApi = {
     {
       id: 13,
       name: 'Alien Googah',
-      status: 'unknown',
-      species: 'Alien',
+      status: Status.Unknown,
+      species: Species.Alien,
       type: '',
-      gender: 'unknown',
+      gender: Gender.Unknown,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -502,12 +509,12 @@ export const resultApi = {
     {
       id: 14,
       name: 'Alien Morty',
-      status: 'unknown',
-      species: 'Alien',
+      status: Status.Unknown,
+      species: Species.Alien,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -522,12 +529,12 @@ export const resultApi = {
     {
       id: 15,
       name: 'Alien Rick',
-      status: 'unknown',
-      species: 'Alien',
+      status: Status.Unknown,
+      species: Species.Alien,
       type: '',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -542,12 +549,12 @@ export const resultApi = {
     {
       id: 16,
       name: 'Amish Cyborg',
-      status: 'Dead',
-      species: 'Alien',
+      status: Status.Dead,
+      species: Species.Alien,
       type: 'Parasite',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -562,10 +569,10 @@ export const resultApi = {
     {
       id: 17,
       name: 'Annie',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: '',
-      gender: 'Female',
+      gender: Gender.Female,
       origin: {
         name: 'Earth (C-137)',
         url: 'https://rickandmortyapi.com/api/location/1',
@@ -582,12 +589,12 @@ export const resultApi = {
     {
       id: 18,
       name: 'Antenna Morty',
-      status: 'Alive',
-      species: 'Human',
+      status: Status.Alive,
+      species: Species.Human,
       type: 'Human with antennae',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
@@ -605,16 +612,16 @@ export const resultApi = {
     {
       id: 19,
       name: 'Antenna Rick',
-      status: 'unknown',
-      species: 'Human',
+      status: Status.Unknown,
+      species: Species.Human,
       type: 'Human with antennae',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       image: 'https://rickandmortyapi.com/api/character/avatar/19.jpeg',
@@ -625,12 +632,12 @@ export const resultApi = {
     {
       id: 20,
       name: 'Ants in my Eyes Johnson',
-      status: 'unknown',
-      species: 'Human',
+      status: Status.Unknown,
+      species: Species.Human,
       type: 'Human with ants in his eyes',
-      gender: 'Male',
+      gender: Gender.Male,
       origin: {
-        name: 'unknown',
+        name: Status.Unknown,
         url: '',
       },
       location: {
