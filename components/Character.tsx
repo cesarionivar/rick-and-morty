@@ -1,4 +1,4 @@
-import { IRickAndMortyResult } from '../types';
+import { IRickAndMortyResult } from '../interfaces/rickandmorty';
 
 type Props = Pick<
   IRickAndMortyResult,
